@@ -1,0 +1,735 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: #688E82;
+}
+
+.nav{
+    display: flex;
+    background-color: white;
+    height: 88px;
+    color: #688E82;
+    justify-content: flex-start;
+    align-items: center;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.selector{
+    display: flex;
+    background-color: white;
+    height: 50px;
+    color: #688E82;
+    justify-content: center;
+    align-items: center;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.logo{
+    padding-left: 20px;
+}
+
+.nav .SearchandSignin{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    display: flex;
+    margin-left: auto;
+}
+
+.navlist{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 2rem;
+}
+
+.animalList{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 2rem;
+}
+
+.navitem{
+    list-style: none;
+    position: relative;
+    cursor: pointer;
+}
+
+.animalItem{
+    list-style: none;
+    position: relative;
+    cursor: pointer;
+}
+
+.navitem a{
+    font-size: 16px;
+}
+
+/* Dog */
+.dogItem a{
+    font-size: 16px;
+}
+
+/* Cat */
+.catItem a{
+    font-size: 16px;
+}
+
+.animalItem a{
+    font-size: 16px;
+}
+
+.navitem:hover{
+    background-color: #D9E3E0;
+}
+
+/* Dog */
+.dogItem:hover{
+    background-color: #D9E3E0;
+}
+
+/* Cat */
+.catItem:hover{
+    background-color: #D9E3E0;
+}
+
+.animalItem:hover{
+    background-color: #D9E3E0;
+}
+
+li::after{
+    content:"";
+    /* width: 2px; */
+    height: 1rem;
+    border-radius: 5px;
+    left: 1rem;
+    bottom: 2rem;
+    background-color: #688E82;
+    transition: 200ms ease-in;
+}
+
+.navitem:hover::after, .navitem:focus::after{
+    width: 80%;
+}
+
+/* Dog */
+.dogItem:hover::after, .dogItem:focus::after{
+    width: 80%;
+}
+
+/* Cat */
+.catItem:hover::after, .dogItem:focus::after{
+    width: 80%;
+}
+
+.animalItem:hover::after, .animalItem:focus::after{
+    width: 80%;
+}
+
+.navitem:hover ul, .navitem:focus ul{
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Dog */
+.dogItem:hover ul, .dogItem:focus ul{
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Cat */
+.catItem:hover ul, .dogItem:focus ul{
+    opacity: 1;
+    visibility: visible;
+}
+
+.animalItem:hover ul, .animalItem:focus ul{
+    opacity: 1;
+    visibility: visible;
+}
+
+.itemdrop{
+    position: absolute;
+    top: 3rem;
+    left: -1rem;
+    box-shadow: 0 0 5px #cecece;
+    background-color: white;
+    border-radius: 10px;
+    width: 12rem;
+    padding: 1rem;
+    flex-direction: column;
+    gap: 0.5rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: 200ms ease-in-out;
+}
+
+.dogItemDrop{
+    position: absolute;
+    top: 17.15rem;
+    left: 38.5rem;
+    box-shadow: 0 0 5px #cecece;
+    background-color: white;
+    border-radius: 10px;
+    width: 12rem;
+    padding: 1rem;
+    flex-direction: column;
+    gap: 0.5rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: 200ms ease-in-out;
+}
+
+.catItemDrop{
+    position: absolute;
+    top: 17.25rem;
+    left: 38.5rem;
+    box-shadow: 0 0 5px #cecece;
+    background-color: white;
+    border-radius: 10px;
+    width: 12rem;
+    padding: 1rem;
+    flex-direction: column;
+    gap: 0.5rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: 200ms ease-in-out;
+}
+
+li{
+    list-style: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: 200ms ease-in-out;
+}
+
+.itemdrop li:hover{
+    background-color: #D9E3E0;
+}
+
+/* Dog */
+.dogItemDrop li:hover{
+    background-color: #D9E3E0;
+}
+
+/* Cat */
+.catItemDrop li:hover{
+    background-color: #D9E3E0;
+}
+
+form{
+        margin-right: 10px;
+        background-color: white;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        border-radius: 5px;
+        border-style: solid;
+        border-color: #A6B9B3;
+        align-items: center;
+        border-width: 2px;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }
+
+input{
+    all: unset;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: #688E82;
+    width: 80%;
+}
+
+::placeholder{
+    color: #688E82;
+}
+
+button{
+    all: unset;
+    cursor: pointer;
+}
+
+button img{
+    fill: currentColor;
+    width: 15px;
+}
+
+ul li a{
+    color: #688E82;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.Signin{
+    background-color: #688E82;
+    padding: 5px 25px 5px 25px;
+    border-radius: 5px;
+}
+
+.Signin a{
+    text-decoration: none;
+    color: white;
+    font-style: normal;
+    font-weight: 600;
+}
+
+
+.SearchandSignin a img{
+  width: 40px;
+  height: 40px;
+  margin-left: 20px;
+}
+
+.container-one{
+    margin: 30px auto;
+}
+
+.container-one .intro #one{
+    text-align: center;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 60px;
+    color: #688E82;
+
+}
+
+.container-one .intro #two{
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: #688E82;
+
+}
+
+img.illusOne {
+    display: block;
+    margin: 40px auto;
+    width: 45%;
+    padding-left: 100px;
+}
+
+footer{
+    padding: 30px 60px;
+    background-color: #688E82;
+    display: flex;
+    justify-content: space-between;
+}
+
+.location, .contact h3, h5{
+    text-align: center;
+}
+
+.socmed img{
+    width: 50px;
+    padding: 10px 10px;
+    align-items: center;
+}
+
+h3, h5{
+    font-style: normal;
+    font-weight: 400;
+    color: white;
+    font-weight: lighter;
+}
+
+a{
+    text-decoration: none;
+}
+
+h3{
+    padding-bottom: 5px;
+}
+
+/* Cat Adoption */
+.head{
+    padding: 30px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.head p{
+    align-items: center;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    color: #688E82;
+    text-align: center;
+}
+
+.catBox, .dogBox{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 50px auto;
+}
+
+.cat, .dog{
+    width: 30%;
+    /* box-shadow: 5px 10px 5px #BFBFBF; */
+    box-shadow: 0 0 5px #cecece;
+    padding: 50px 20px;
+    box-sizing: border-box;
+    background-color: #F9FAFA;
+    border-radius: 10px;
+}
+
+.tim{
+    padding-bottom: 15px;
+}
+
+.abby{
+    padding-top: 30px;
+    padding-bottom: 25px;
+}
+
+.bella{
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+
+.jack{
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.fiona{
+    padding-top: 50px;
+    padding-bottom: 35px;
+}
+
+.lily{
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+.leo{
+    padding-top: 90px;
+    padding-bottom: 70px;
+}
+
+.ziggy{
+    padding-top: 100px;
+    padding-bottom: 80px;
+}
+
+.cat img{
+    width: 200px;
+    height: fit-content;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+.cat .name{
+    color: #688E82;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+    text-align: center;
+}
+
+.cat a p{
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    color: #688E82;
+    border-color: #688E82;
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 2px;
+    margin-top: 10px;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+    width: 50%;
+    transition: 0.3s;
+}
+
+.cat a p:hover{
+    background-color: #688E82;
+    color: #fff;
+}
+
+/* Dog Adoption */
+.head .dogAdopt, .head .catAdopt{
+    margin-right: 10px;
+}
+
+.dog img{
+    width: 200px;
+    height: fit-content;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.dog .name{
+    color: #688E82;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+    text-align: center;
+}
+
+.dog a p{
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    color: #688E82;
+    border-color: #688E82;
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 2px;
+    margin-top: 10px;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+    width: 50%;
+    transition: 0.3s;
+}
+
+.dog a p:hover{
+    background-color: #688E82;
+    color: #fff;
+}
+
+.allan{
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+
+.fluffy{
+    padding-bottom: 30px;
+}
+
+.ash{
+    padding-bottom: 15px;
+}
+
+.dog .robbert{
+    width: 150px;
+    padding-bottom: 15px;
+}
+
+.daine{
+    padding-top: 60px;
+    padding-bottom: 55px;
+}
+
+.bob{
+    padding-bottom: 32px;
+}
+
+.dog .zack{
+    width: 150px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.chika{
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+
+.dog .shine{
+    width: 250px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+/* Dog & Cat Profile */
+.mainColumn{
+    margin: 50px auto;
+    padding-left: 50px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.animalAttr img{
+    width: 250px;
+}
+
+.animalAttr .name{
+    color: #688E82;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+    text-align: center;
+}
+
+.animalAttr .details{
+    color: #688E82;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+}
+
+.animalAttr a p{
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    color: #688E82;
+    border-color: #688E82;
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 2px;
+    margin-top: 10px;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+    width: 50%;
+    transition: 0.3s;
+}
+
+.animalAttr a p:hover{
+    background-color: #688E82;
+    color: #fff;
+}
+
+.columnTwo{
+    margin-left: 50px;
+    margin-top: 40px;
+}
+
+.bodyMarkings .title, .medical .title{
+    background-color: #688E82;
+    border-radius: 5px;
+    display: flex;
+    padding: 10px 600px 10px 10px;
+    margin-top: 20px;
+}
+
+.bodyMarkings .title p, .medical .title p{
+    color: #fff;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+    padding-left: 5px;
+}
+
+.bodyMdetails, .medicalDetails{
+    display: flex;
+}
+
+.bodyMdetails .details, .medicalDetails .details{
+    color: #688E82;
+    padding-top: 30px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.bodyMdetails .right, .medicalDetails .right{
+    padding-left: 250px;
+}
+
+/* About Us */
+.aboutUs{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px auto;
+    padding: 100px 100px;
+    background-color: #688E82;
+}
+
+.aboutUs img{
+    width: 30%;
+}
+
+.aboutUstext{
+    color: #fff;
+}
+
+.aboutUstext .head{
+    padding-bottom: 10px;
+    font-size: 40px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.aboutUstext .text{
+    /* word-spacing: 5px; */
+    font-size: 14px;
+    text-align: justify;
+    padding-left: 30px;
+    text-indent: 20px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+/* ourService */
+.ourService{
+    margin: 50px auto;
+}
+
+.ourServicebox{
+    display: flex;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: 50px auto;
+}
+
+.service{
+    width: 30%;
+    padding: 50px 20px;
+    box-sizing: border-box;
+    background-color: #688E82;
+}
+
+.ourServicetext .head{
+    padding-bottom: 10px;
+    color: #688E82;
+    font-size: 40px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.ourServicetext .text{
+    font-size: 14px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    color: #688E82;
+}
+
+.service img{
+  width: 100px;
+  height: fit-content;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.service .text{
+    padding-top: 10px;
+    font-size: 14px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    color: #fff;
+}

@@ -1,0 +1,117 @@
+*{
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+
+  /*Outline: solid 1px red;*/
+  box-sizing: border-box;
+
+}
+
+#mainBox{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-top: 80px;
+  padding-bottom: 120px;
+}
+
+#box1{
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+#box1 img{
+  width: 250px;
+  height: 250px;
+}
+
+#box1 h1{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  color: #688E82;
+}
+
+#box1 a[id = "edit"]{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  text-decoration: none;
+  color: rgba(104, 142, 130, 0.5);
+}
+
+#box1 a[id = "logout"]{
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  text-decoration: none;
+  margin-top: 10px;
+  color: #688E82;
+}
+
+#box2{
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 50px;
+  justify-content: center;
+}
+
+#box2 #title h1{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 46px;
+  color: #688E82;
+}
+
+#box2 #content{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 100px;
+  box-sizing: border-box;
+}
+
+#box2 #content #name{
+  display: flex;
+  flex-direction: column;
+  row-gap: 50px;
+}
+
+#box2 #content #other{
+  display: flex;
+  flex-direction: column;
+  row-gap: 50px;
+}
+
+#box2 #content .inputBox{
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+#box2 #content .inputBox label{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  color: #688E82;
+}
+
+#box2 #content .inputBox input{
+  width: 290px;
+  height: 35px;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.42);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  color: #688E82;
+  text-indent: 5px;
+}

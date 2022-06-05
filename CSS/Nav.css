@@ -1,0 +1,208 @@
+a{
+    text-decoration: none;
+    color: #688E82;
+}
+
+.nav{
+    display: flex;
+    background-color: white;
+    height: 88px;
+    color: #688E82;
+    justify-content: flex-start;
+    align-items: center;
+    font-style: normal;
+    font-weight: 400;
+    box-sizing: border-box;
+}
+
+.selector{
+    display: flex;
+    background-color: white;
+    height: 50px;
+    color: #688E82;
+    justify-content: center;
+    align-items: center;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.logo{
+    padding-left: 20px;
+}
+
+.nav .SearchandSignin{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    display: flex;
+    margin-left: auto;
+    overflow-y: hidden;
+}
+
+.navlist{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 2rem;
+}
+
+.navitem{
+    list-style: none;
+    position: relative;
+    cursor: pointer;
+}
+
+.navitem a{
+    font-size: 16px;
+}
+
+.navitem:hover{
+    background-color: #D9E3E0;
+}
+
+li::after{
+    content:"";
+    /* width: 2px; */
+    height: 1rem;
+    border-radius: 5px;
+    left: 1rem;
+    bottom: 2rem;
+    background-color: #688E82;
+    transition: 200ms ease-in;
+}
+
+.navitem:hover::after, .navitem:focus::after{
+    width: 80%;
+}
+
+.navitem:hover ul, .navitem:focus ul{
+    opacity: 1;
+    visibility: visible;
+}
+
+.itemdrop{
+    position: absolute;
+    top: 3rem;
+    left: -1rem;
+    box-shadow: 0 0 5px #cecece;
+    background-color: white;
+    border-radius: 10px;
+    width: 12rem;
+    padding: 1rem;
+    flex-direction: column;
+    gap: 0.5rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: 200ms ease-in-out;
+}
+
+li{
+    list-style: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: 200ms ease-in-out;
+}
+
+.itemdrop li:hover{
+    background-color: #D9E3E0;
+}
+
+form{
+        margin-right: 10px;
+        background-color: white;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        border-radius: 5px;
+        border-style: solid;
+        border-color: #A6B9B3;
+        align-items: center;
+        border-width: 2px;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }
+
+input{
+    all: unset;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: #688E82;
+    width: 80%;
+}
+
+::placeholder{
+    color: #688E82;
+}
+
+ul li a{
+    color: #688E82;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+button{
+    all: unset;
+    cursor: pointer;
+}
+
+button img{
+    fill: currentColor;
+    width: 15px;
+}
+
+.Signin{
+    background-color: #688E82;
+    padding: 5px 25px 5px 25px;
+    border-radius: 5px;
+}
+
+.Signin a{
+    text-decoration: none;
+    color: white;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.SearchandSignin a img{
+  width: 40px;
+  height: 40px;
+  margin-left: 20px;
+}
+
+footer{
+    padding: 30px 60px;
+    background-color: #688E82;
+    display: flex;
+    justify-content: space-between;
+}
+
+.location, .contact h3, h5{
+    text-align: center;
+}
+
+.socmed img{
+    width: 50px;
+    padding: 10px 10px;
+    align-items: center;
+}
+
+h3, h5{
+    font-style: normal;
+    font-weight: 400;
+    color: white;
+    font-weight: lighter;
+}
+
+a{
+    text-decoration: none;
+}
+
+h3{
+    padding-bottom: 5px;
+}
